@@ -21,6 +21,7 @@ response: ChatResponse = chat(
         }
     ],
 )
+# print response
 print(response["message"]["content"])
 result = response["message"]["content"]
 with open(os.path.join("responses", file_md), "w", encoding="utf_8") as file:
